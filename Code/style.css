@@ -1,0 +1,101 @@
+@font-face{ font-family: Poppins-Thin;
+    src: url('../fonts/Poppins/Poppins-Thin.ttf');
+}
+
+@font-face{ font-family: Poppins-Regular;
+    src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Poppins-Regular, sans-serif;
+    margin-bottom: 50px;
+    
+}
+
+.logo img{
+    height:150px ;
+    width: 200px;
+    display: block;
+    margin: 15px 35px ;
+}
+
+.banner{
+    background-image: url(../images/vanbackground2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    padding-top: 30px;
+    
+}s
+
+.slogan{
+    display: flex;
+    justify-items: center;
+    
+     
+}
+
+.slogan p{
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+}
+
+.contactus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: slategrey;
+    padding-bottom: 20px;
+}
+
+.contactus h1{
+    padding: 1.5% 0px;
+    font-size: 50px
+}
+.contactus li{
+    list-style: none;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.deliverytypes{
+    margin: 0 15%;
+    background-color:#a1b0bf;
+    border-radius: 15px;
+    margin-top: 50px;
+    
+}
+
+.deliverytypes ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    border-radius: 15px;
+    
+
+}
+.deliverytypes li{
+    list-style: none;
+    padding: 20px;
+
+}
+
+.deliverytypes .title{
+    padding: 20px;
+    align-self: center;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
