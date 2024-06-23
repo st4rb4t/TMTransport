@@ -1,9 +1,9 @@
 @font-face{ font-family: Poppins-Thin;
-    src: url('../fonts/Poppins/Poppins-Thin.ttf');
+    src: url('fonts/Poppins/Poppins-Thin.ttf');
 }
 
 @font-face{ font-family: Poppins-Regular;
-    src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
 
 *{
@@ -27,7 +27,7 @@ body{
 }
 
 .banner{
-    background-image: url(../images/vanbackground2.png);
+    background-image: url(images/vanbackground2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
