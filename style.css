@@ -6,6 +6,12 @@
     src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
 
+@font-face{ font-family: Poppins-ExtraBold;
+    src: url('fonts/Poppins/Poppins-ExtraBold.ttf') format('truetype');
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -16,15 +22,24 @@
 body{
     font-family: Poppins-Regular, sans-serif;
     margin-bottom: 50px;
+    background-color: slategrey;
     
 }
 
 .logo img{
-    height:150px ;
-    width: 200px;
+    height:100px ;
+    width: 150px;
     display: block;
     margin: 15px 35px ;
 }
+
+.fblogo svg{
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+  
+}
+
 
 .banner{
     background-image: url(images/vanbackground2.png);
@@ -33,20 +48,22 @@ body{
     background-position: center;
     min-height: 50vh;
     padding-top: 30px;
+    padding-bottom: 75px;
+    display: flex;
+
     
-}s
+}
 
 .slogan{
-    display: flex;
-    justify-items: center;
-    
-     
 }
 
 .slogan p{
     color: #fff;
     font-size: 50px;
     text-align: center;
+    padding-top: 30px;
+
+    
 }
 
 .contactus{
@@ -55,11 +72,15 @@ body{
     align-items: center;
     background-color: slategrey;
     padding-bottom: 20px;
+    /* box-shadow:  3px 3px 10px ; */
+    color: #fff;
+    margin: 50px 0;
 }
 
 .contactus h1{
     padding: 1.5% 0px;
-    font-size: 50px
+    font-size: 50px;
+    font-family: Poppins-ExtraBold;
 }
 .contactus li{
     list-style: none;
@@ -69,33 +90,50 @@ body{
 }
 
 .deliverytypes{
-    margin: 0 15%;
-    background-color:#a1b0bf;
-    border-radius: 15px;
-    margin-top: 50px;
+    /* margin: 10%; */
+    background-color:#fff;
+    /* border-radius: 15px; */
+   
+    padding: 0 50px ;
+    padding-bottom: 50px;
+    /* box-shadow: 3px 3px 10px ;  */
+    
     
 }
 
 .deliverytypes ul{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    border-radius: 15px;
-    
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-rows: repeat(4, 1fr); */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-row: repeat(4, minmax(0, 1fr));
+    /* border-radius: 15px; */
+    /* border: solid #000 1px; */
 
 }
 .deliverytypes li{
     list-style: none;
     padding: 20px;
+    color: rgb(90, 103, 116);
 
 }
 
 .deliverytypes .title{
     padding: 20px;
     align-self: center;
-    font-size: 30px;
+    font-size: 29px;
+    text-align: center;
+    font-family: Poppins-ExtraBold;
+}
+
+.deliverytypes .desc{
     text-align: center;
 }
+
+
+
+
 
 
 
