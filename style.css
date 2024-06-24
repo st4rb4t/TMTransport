@@ -22,7 +22,7 @@
 body{
     font-family: Poppins-Regular, sans-serif;
     margin-bottom: 50px;
-    background-color: slategrey;
+    background-color: rgb(90, 103, 116);
     
 }
 
@@ -33,11 +33,28 @@ body{
     margin: 15px 35px ;
 }
 
+/* .linklogos {
+    display: flex;
+    flex-direction: row
+} */
+
 .fblogo svg{
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-direction: column;
   
+}
+
+.whatsapplogo svg{
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+    margin-top: 0px;
+    flex-direction: column;
+    
 }
 
 
@@ -70,7 +87,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: slategrey;
+    background-color: rgb(90, 103, 116);
     padding-bottom: 20px;
     /* box-shadow:  3px 3px 10px ; */
     color: #fff;
