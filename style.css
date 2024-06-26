@@ -16,15 +16,15 @@
     box-sizing: border-box;
 }
 
-
-
+html,body{
+    min-width: 100vw;
+}
 
 body{
     font-family: Poppins-Regular, sans-serif;
     margin-bottom: 50px;
     background-color: rgb(90, 103, 116);
     position: absolute;
-    
 }
 
 .logo img{
@@ -34,11 +34,12 @@ body{
     margin: 15px 35px ;
 }
 
-/* .linklogos {
+.linklogos{
     display: flex;
-    flex-direction: row
-} */
-
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 20px;
+}
 .fblogo svg{
     height: 30px;
     width: 30px;
@@ -54,7 +55,6 @@ body{
     margin: 20px;
     margin-top: 0px;
     flex-direction: column;
-    
 }
 
 .banner{
@@ -66,8 +66,6 @@ body{
     padding-top: 30px;
     padding-bottom: 75px;
     display: flex;
-
-    
 }
 
 .slogan p{
@@ -83,7 +81,6 @@ body{
     align-items: center;
     background-color: rgb(90, 103, 116);
     padding-bottom: 20px;
-    /* box-shadow:  3px 3px 10px ; */
     color: #fff;
     margin: 50px 0;
 }
@@ -108,18 +105,12 @@ body{
 
 .deliverytypes ul{
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
     max-width: 1200px;
 }
-@media (min-width: 900px) {
+/* @media (min-width: 900px) {
     .deliverytypes ul { grid-template-columns: repeat(3, 1fr); }
-  }
-/* @media (max-width: 500px) {
-    .deliverytypes{
-        grid-template-columns: 1fr;
-    }
-} */
+  } */
+
 .deliverytypes li{
     list-style: none;
     padding: 20px;
