@@ -75,6 +75,21 @@ body{
     padding-top: 30px;
 }
 
+@media (max-width:500px) {
+    body{
+        font-size: 20px;
+    }
+    {
+        font-size: 30px;
+    }
+    .slogan p {font-size: 20px;
+    }
+    .contactus {
+        font-size: 30px !important;
+    }
+    
+}
+
 .contactus{
     display: flex;
     flex-direction: column;
@@ -107,9 +122,9 @@ body{
     display: grid;
     max-width: 1200px;
 }
-/* @media (min-width: 900px) {
+@media (min-width: 900px) {
     .deliverytypes ul { grid-template-columns: repeat(3, 1fr); }
-  } */
+  }
 
 .deliverytypes li{
     list-style: none;
@@ -128,6 +143,8 @@ body{
 .deliverytypes .desc{
     text-align: center;
 }
+
+
 
 
 
