@@ -86,7 +86,8 @@ body{
     font-size: 50px;
     padding-top: 30px;
     font-family: Poppins-ExtraBold;
-    margin-left: 50px;
+    margin-left: 250px;
+    margin-top: 150px;
 
     
 }
@@ -125,7 +126,7 @@ body{
 .deliverytypes ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 0 8%;
+    margin: 0 15%;
     align-items: center;
 }
 
@@ -141,10 +142,7 @@ body{
     padding: 20px;
     font-size: 29px;
     font-family: Poppins-ExtraBold;
-}
-
-.deliverytypes .desc{
-    
+    text-align: center;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -168,10 +166,11 @@ body{
     .banner p{
         font-size: 30px;
         text-align: center;
+        margin: 0;
     }
     
     .contactus h1{
-        font-size: 37px;
+        font-size: 35px;
     }
     .contactus li{
         font-size: 20px;
