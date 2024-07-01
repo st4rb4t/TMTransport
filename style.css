@@ -15,15 +15,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-@media screen (min-width:320px){
-    
-}
-@media screen {
-    
-}
-@media screen {
-    
-}
+
 
 
 html,body{
@@ -46,10 +38,24 @@ body{
     padding-top: 30px;
     padding-bottom: 75px;
     display: flex;
+}
+
+.banner{
+    flex-wrap: wrap;
+    
+}
+.banner div:nth-of-type(1){
+    order: 1;
+    width: 50%;
+}
+.banner div:nth-of-type(2){
+    order: 3;
+}
+.banner div:nth-of-type(3){
+    order: 2;
     
     
 }
-
 .logo img{
     height:100px ;
     width: 150px;
@@ -80,15 +86,18 @@ body{
     flex-direction: column;
 }
 
+.slogan{
+    width: 100%;
+    
+}
 
 .slogan p{
     color: #fff;
     font-size: 50px;
-    padding-top: 30px;
     font-family: Poppins-ExtraBold;
-    margin-left: 250px;
-    margin-top: 150px;
-
+    margin-top: 75px;
+    text-align: center;
+    
     
 }
 
@@ -101,7 +110,6 @@ body{
     padding-bottom: 20px;
     color: #fff;
     margin: 50px 0;
-    
 }
 
 .contactus h1{
@@ -120,14 +128,15 @@ body{
     background-color:#fff;
     padding: 0 50px ;
     padding-bottom: 50px;
-    
 }
 
 .deliverytypes ul{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0 15%;
-    align-items: center;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5%;
+   
 }
 
 
@@ -136,15 +145,58 @@ body{
     padding: 20px;
     color: rgb(90, 103, 116);
     text-align: center;
+    width: 33%;
 }
 
 .deliverytypes .title{
     padding: 20px;
-    font-size: 29px;
+    font-size: 25px;
     font-family: Poppins-ExtraBold;
     text-align: center;
 }
-
+.deliverytypes{
+    font-size: 15px;
+}
+/* Extra Extra small devices (phones 400px and down) */
+@media only screen and (max-width: 400px){
+    .contactus h1{
+        font-size: 35px;
+        .banner{
+            flex-wrap: wrap;
+            
+        }
+        
+        .banner p{
+            font-size: 30px;
+            text-align: center;
+            margin: 0;
+        }
+        
+        .contactus h1{
+            font-size: 29px;
+        }
+        .contactus li{
+            font-size: 20px;
+        }
+        .deliverytypes{
+            padding: 0 15px;
+        }
+        .deliverytypes ul{
+            flex-direction: column;
+            margin: 0;
+        }
+        .deliverytypes li{
+            width: 100%;
+        }
+        .deliverytypes .title{
+           
+            text-align: center;
+        }
+        .deliverytypes .desc{
+            font-size: 20px;
+        }
+    }
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .banner{
@@ -170,14 +222,24 @@ body{
     }
     
     .contactus h1{
-        font-size: 35px;
+        font-size: 31px;
     }
     .contactus li{
         font-size: 20px;
     }
+    .deliverytypes{
+        padding: 0 15px;
+    }
     .deliverytypes ul{
-        grid-template-columns: 1fr;
+        flex-direction: column;
         margin: 0;
+    }
+    .deliverytypes li{
+        width: 100%;
+    }
+    .deliverytypes .title{
+       
+        text-align: center;
     }
     .deliverytypes .desc{
         font-size: 20px;
@@ -197,6 +259,7 @@ body{
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    
 
 }
 
