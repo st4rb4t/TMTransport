@@ -16,17 +16,13 @@
     box-sizing: border-box;
 }
 
-
-
 html,body{
     min-width: 100vw;
 }
 
 body{
+    
     font-family: Poppins-Regular, sans-serif;
-    margin-bottom: 50px;
-    background-color: rgb(90, 103, 116);
-    position: absolute;
 }
 
 .banner{
@@ -34,15 +30,11 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 50vh;
-    padding-top: 30px;
-    padding-bottom: 75px;
     display: flex;
 }
 
 .banner{
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; 
 }
 .banner div:nth-of-type(1){
     order: 1;
@@ -53,9 +45,8 @@ body{
 }
 .banner div:nth-of-type(3){
     order: 2;
-    
-    
 }
+
 .logo img{
     height:100px ;
     width: 150px;
@@ -88,185 +79,96 @@ body{
 
 .slogan{
     width: 100%;
+    display: flex;
+    justify-content: center;
     
 }
 
 .slogan p{
     color: #fff;
-    font-size: 50px;
+    font-size: 30px;
     font-family: Poppins-ExtraBold;
-    margin-top: 75px;
     text-align: center;
-    
-    
-}
+    padding: 50px;
 
+}
 
 .contactus{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(90, 103, 116);
-    padding-bottom: 20px;
     color: #fff;
-    margin: 50px 0;
+    padding:5vh 0;
 }
 
 .contactus h1{
-    padding: 1.5% 0px;
-    font-size: 50px;
     font-family: Poppins-ExtraBold;
+    padding: 1.5% 0px;
+    font-size: 29px;
 }
+
 .contactus li{
     list-style: none;
-    padding: 10px;
-    font-size: 25px;
     text-align: center;
+    font-size: 20px;
 }
 
 .deliverytypes{
     background-color:#fff;
-    padding: 0 50px ;
-    padding-bottom: 50px;
+   margin: 0px 5%;
+   padding: 20px 0;
 }
 
 .deliverytypes ul{
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr); */
     display: flex;
     flex-wrap: wrap;
-    margin: 0 5%;
-   
+    justify-content: center;
+    
 }
 
 
 .deliverytypes li{
     list-style: none;
-    padding: 20px;
     color: rgb(90, 103, 116);
     text-align: center;
-    width: 33%;
+    width: 350px;
+    padding: 10px;
+
 }
 
 .deliverytypes .title{
-    padding: 20px;
-    font-size: 25px;
+    padding :20px;
+    font-size:20px;
     font-family: Poppins-ExtraBold;
     text-align: center;
 }
 .deliverytypes{
-    font-size: 15px;
+    font-size:;
 }
-/* Extra Extra small devices (phones 400px and down) */
-@media only screen and (max-width: 400px){
+/* Phones  */
+@media screen and (Max-width: 480px) {
+    
+}
+/* Large Phones */
+@media screen and (min-width: 481px) {
+    
+}
+/* Tablets */
+@media screen and (min-width: 769px) {
+    
+}
+/* Small desktop  */
+@media screen and (min-width: 1025px) {
     .contactus h1{
-        font-size: 35px;
-        .banner{
-            flex-wrap: wrap;
-            
-        }
-        
-        .banner p{
-            font-size: 30px;
-            text-align: center;
-            margin: 0;
-        }
-        
-        .contactus h1{
-            font-size: 29px;
-        }
-        .contactus li{
-            font-size: 20px;
-        }
-        .deliverytypes{
-            padding: 0 15px;
-        }
-        .deliverytypes ul{
-            flex-direction: column;
-            margin: 0;
-        }
-        .deliverytypes li{
-            width: 100%;
-        }
-        .deliverytypes .title{
-           
-            text-align: center;
-        }
-        .deliverytypes .desc{
-            font-size: 20px;
-        }
+        font-size:40px;
     }
+    
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .banner{
-        flex-wrap: wrap;
-        
-    }
-    .banner div:nth-of-type(1){
-        order: 1;
-        width: 40%;
-    }
-    .banner div:nth-of-type(2){
-        order: 3;
-    }
-    .banner div:nth-of-type(3){
-        order: 2;
-        margin-left: auto;
-    }
-    
-    .banner p{
-        font-size: 30px;
-        text-align: center;
-        margin: 0;
-    }
-    
+/* Fullscreen Desktop */
+@media screen and (min-width:1201px) {
     .contactus h1{
-        font-size: 31px;
+        font-size:50px;
     }
-    .contactus li{
-        font-size: 20px;
-    }
-    .deliverytypes{
-        padding: 0 15px;
-    }
-    .deliverytypes ul{
-        flex-direction: column;
-        margin: 0;
-    }
-    .deliverytypes li{
-        width: 100%;
-    }
-    .deliverytypes .title{
-       
-        text-align: center;
-    }
-    .deliverytypes .desc{
-        font-size: 20px;
-    }
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
     
-
 }
-
-
-
-
-
-
-
-
