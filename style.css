@@ -37,11 +37,12 @@ body{
 }
 
 .banner{
-    background-image: url(images/vanbackground2.png);
+    background-image: url(images/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
+    height: 40vh;
 }
 
 .banner{
@@ -58,12 +59,14 @@ body{
     order: 2;
 }
 
-.logo img{
+/* .logo img{
     height:100px ;
     width: 200px;
     display: block;
     margin: 35px 35px ;
-}
+} */
+
+
 
 .linklogos{
     display: flex;
@@ -76,12 +79,22 @@ body{
     height: 30px;
     width: 30px;
     flex-direction: column;  
+    
 }
 
 .whatsapplogo svg{
     height: 30px;
     width: 30px;
     flex-direction: column;
+    
+}
+
+.imagelogo svg{
+    height: 30px;
+    width: 30px;
+    flex-direction: column;
+    
+
 }
 
 .slogan{
@@ -220,3 +233,20 @@ body{
     }
     
 }
+
+
+/* gallery styling */
+
+.gallery{
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.gallery img{
+    margin-left: px;
+    margin-right: auto;
+    width: 90px;
+    height: 90px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px; */
+}
+
