@@ -36,6 +36,7 @@ body{
     font-family: Poppins-Regular, sans-serif;
 }
 
+
 .banner{
     background-image: url(images/banner.png);
     background-repeat: no-repeat;
@@ -75,7 +76,13 @@ body{
     margin-right: 10px;
     margin-top: 10px;
 }
-.fblogo svg{
+
+.linksvg{
+    height: 30px;
+    width: 30px;
+    flex-direction: column;  
+}
+/* .fblogo svg{
     height: 30px;
     width: 30px;
     flex-direction: column;  
@@ -96,6 +103,7 @@ body{
     
 
 }
+    */
 
 .slogan{
     width: 100%;
@@ -145,13 +153,27 @@ body{
     width: 100vw;
 }
 
-.aboutus{}
+
 
 .aboutus .insurance{
     font-family: Poppins-Medium;
     font-size: 25px;
 }
 
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+.form input, textarea{
+    width: 90vw;
+}
+
+.form .submit{
+    width: 30vw;
+    justify-self: center;
+
+}
 .deliverytypes{
     background-color:var(--secondary-color);
    margin: 0px 5%;
@@ -181,9 +203,7 @@ body{
     font-family: Poppins-ExtraBold;
     text-align: center;
 }
-.deliverytypes{
-    font-size:;
-}
+
 .contactus{
     display: flex;
     flex-direction: column;
@@ -207,6 +227,41 @@ body{
     font-size: 20px;
     padding: 5px;
 }
+
+
+
+/* gallery styling */
+/* .slogan{
+    font-size: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-color);
+}
+.slogan p{
+
+} */
+.gallery{
+    margin: 50px 0px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+
+.gallery img{
+    display: flex;
+    flex-direction: column;
+    
+    margin-right: auto;
+    width: 90px;
+    height: 90px;
+    margin: 5px 3px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px; */
+}
+
 /* Phones  */
 @media screen and (Max-width: 480px) {
     
@@ -231,30 +286,37 @@ body{
     .info h1{
         font-size:50px;
     }
+    .logo img{
+        width: 300px;
+    }
+    .banner{
+        height: 70vh;
+        background-image: url(images/bannerdesk.png);
+    }
+    .linklogos{
+        margin-right: 40px;
+        margin-top: 20px;
+    }
+    .linksvg{
+        width: 40px;
+        height: 40px;
+    }
+    .slogan{
+        margin-bottom: 400px;
+    }
+    .slogan p{
+        font-size: 100px; 
+    }
+    .gallery{
+        padding: 0px 150px;
+    }
+    .gallery img{
+        width: 200px;
+        height: 200px;
+        margin: 7px 4.2px;
+        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+    }
     
-}
-
-
-/* gallery styling */
-
-.gallery{
-    margin: 50px 0px;
     
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-    
-}
-
-.gallery img{
-    display: flex;
-    flex-direction: column;
-    margin-left: ;
-    margin-right: auto;
-    width: 90px;
-    height: 90px;
-    margin: 5px 3px;
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px; */
 }
 
