@@ -163,15 +163,26 @@ body{
 .form{
     display: flex;
     justify-content: center;
+    margin: 20px 0px;
+}
+
+.form h3{
+    padding: 10px;
 }
 
 .form input, textarea{
-    width: 90vw;
+    width: 50vw;
+
 }
 
 .form .submit{
-    width: 30vw;
+    width: 60px;
     justify-self: center;
+    padding: 5px;
+    margin: 10px 0px;
+    font-size: 17px;
+    text-align: center;
+    font-family: Poppins-Medium;
 
 }
 .deliverytypes{
