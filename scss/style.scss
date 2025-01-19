@@ -1,0 +1,148 @@
+@use 'index' as *;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: $primary-font;
+}
+
+.banner{
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 40vh;
+    flex-wrap: wrap;
+    div:nth-of-type(1){
+        order: 1;
+        width: 50%;
+    }
+    div:nth-of-type(2){
+        order: 3;
+    }
+    div:nth-of-type(3){
+        order: 2;
+    }
+    .logo{
+        img{
+            height:100px ;
+            width: 200px;
+            display: block;
+            margin: 10px 1px ;
+        }
+    }
+    .linklogos{
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;    
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .linksvg{
+        height: 30px;
+        width: 30px;
+        flex-direction: column;  
+    }
+    .slogan{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: $secondary-colour;
+        font-size: 30px;
+        font-family: Poppins-ExtraBold;
+        text-align: center;
+        padding: 50px;
+    }
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $primary-colour;
+    flex: 1 ;
+    .aboutus{
+        background-color:$primary-colour ;
+        color: $secondary-colour;
+        padding: 3vh 0;
+        width: 100vw;
+        h1{
+            
+            text-align: center; 
+            font-family: Poppins-ExtraBold;
+        }
+        li{
+            list-style: none;
+            text-align: center;
+            font-size: 20px;
+            padding: 5px;
+        }
+        li:nth-of-type(2){
+            font-family: Poppins-Medium;
+            font-size: 25px;
+        }
+            
+    }    
+}
+.deliverytypes{
+    background-color:$secondary-colour;
+    margin: 0px 5%;
+    padding: 20px 0;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    li{
+        list-style: none;
+        color: $primary-colour;
+        text-align: center;
+        width: 350px;
+    }
+    .title{
+        padding :20px;
+        font-size:20px;
+        font-family: Poppins-ExtraBold;
+        text-align: center;
+    }
+}
+.contactus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $secondary-colour;
+    background-color: $primary-colour;
+    flex: 1 ;
+    padding: 3vh;
+    h1{
+        font-family: Poppins-ExtraBold;
+        /* padding: 1.5% 0px; */
+        font-size: 29px;
+        text-align: center;
+    }
+    li{
+        list-style: none;
+        text-align: center;
+        font-size: 20px;
+        padding: 5px;
+    }
+}
+/* gallery styling */
+.gallery{
+    margin: 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img{
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        width: 90px;
+        height: 90px;
+        margin: 5px 3px;
+    }
+}
